@@ -1,4 +1,4 @@
-# 🌸 Safe Route Detection Python Backend
+# 🌸 Safe Route Detection 
 
 Flask-based REST API for real-time safe route detection using crime data, OSMnx, and NetworkX.
 
@@ -55,7 +55,7 @@ Flask-based REST API for real-time safe route detection using crime data, OSMnx,
 Edit `app.py` to configure:
 
 - `CRIME_DATA_PATH`: Path to your crime data CSV file (default: `"data/crime_weighted_output.csv"`)
-- `CITY_NAME`: City name for OSMnx map download (default: `"Delhi, India"`)
+- `CITY_NAME`: City name for OSMnx map download (default: `"Washington, DC"`)
 - `MAPS_DIR`: Directory to store generated map HTML files (default: `"maps"`)
 
 ## Running the Server
@@ -98,8 +98,8 @@ POST /getSafeRoute
 **Request Body:**
 ```json
 {
-  "source": "Connaught Place, Delhi",
-  "destination": "AIIMS, Delhi"
+  "source": "near **Anacostia / southeast Washington, DC",
+  "destination": "Washington, DC"
 }
 ```
 
@@ -135,8 +135,8 @@ Serves generated map HTML files.
 curl -X POST http://localhost:8000/getSafeRoute \
   -H "Content-Type: application/json" \
   -d '{
-    "source": "Connaught Place, Delhi",
-    "destination": "AIIMS, Delhi"
+    "source": "near **Anacostia / southeast Washington, DC",
+    "destination": "Washington, DC"
   }'
 ```
 
@@ -147,8 +147,8 @@ import requests
 response = requests.post(
     "http://localhost:8000/getSafeRoute",
     json={
-        "source": "Connaught Place, Delhi",
-        "destination": "AIIMS, Delhi"
+        "source": "near **Anacostia / southeast Washington, DC",
+        "destination": "Washington, DC"
     }
 )
 
@@ -206,9 +206,6 @@ To use a different city:
 
 ## License
 
-This project is part of the BTP (Bachelor's Thesis Project) Safe Route Detection System.
+This project is part of the BTP (B.Tech Project) Safe Route Detection System.
 
-## Author
-
-Manasvi Sharma (Corrected Version)
 
