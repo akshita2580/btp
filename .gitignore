@@ -1,0 +1,73 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Node / React Native / Expo
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.expo/
+.expo-shared/
+dist/
+build/
+web-build/
+.expo/*
+
+# Metro / Cache
+*.pid
+*.seed
+*.pid.lock
+.haste_cache/
+.expo/*
+.expo-shared/*
+.expo/web-build/*
+expo-debug.log
+expo-error.log
+
+# React Native
+android/
+ios/
+*.keystore
+*.jks
+
+# Environment
+.env
+.env.*
+config.js
+config.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+venv/
+.env/
+.venv/
+build/
+dist/
+pip-log.txt
+
+# Logs
+logs/
+*.log
+debug.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# coverage
+coverage/
+*.lcov
+
+# Misc
+*.swp
+*.lock
+.pnpm-debug.log
